@@ -1,9 +1,9 @@
-const floatingObjects = document.querySelectorAll('.floating-object');
+/* const floatingObjects = document.querySelectorAll('.floating-object');
 let startPositionX = 0, startPositionY = 0, newPositionX = 0, newPositionY = 0;
 
 // DRAGGING FUNCTION
 
-/* for (let i = 0; i < floatingObjects.length; i++) {
+for (let i = 0; i < floatingObjects.length; i++) {
     floatingObjects[i].addEventListener('mousemove', e => {
         startPositionY = e.clientY;
         startPositionX = e.clientX;

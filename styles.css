@@ -88,7 +88,7 @@ body {
 .join-waitlist-container {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    gap: 10px;
 }
 
 .join-waitlist-input {
@@ -136,6 +136,13 @@ body {
 /* PEOPLE WHO JOINED */
 
 .people-who-joined-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.people-who-joined-left,
+.people-who-joined-right {
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -222,8 +229,8 @@ body {
 }
 
 .wait-list-line-right-top {
-    top: -80px;
-    right: -250px;
+    top: -11%;
+    right: -16%;
     transform: rotateZ(25deg);
 }
 
@@ -253,6 +260,25 @@ body {
     user-select: none;
 }
 
+.floating-object-blurred {
+    top: -16%;
+    left: 5%;
+    width: 220px;
+    height: 220px;
+    filter: blur(2px);
+    background: url(https://framerusercontent.com/images/ioBrAcmXYF8LRSxJApCAUh9LI.png?scale-down-to=512) no-repeat;
+    background-size: cover;
+}
+
+.floating-object-square {
+    top: 30%;
+    left: 13%;
+    width: 150px;
+    height: 150px;
+    background: url(https://framerusercontent.com/images/XBGdEEax7R3d8iEu2HLcV0ji0I.png?scale-down-to=512) no-repeat;
+    background-size: cover;
+}
+
 .floating-object-star {
     width: 300px;
     height: 300px;
@@ -260,4 +286,122 @@ body {
     left: 80px;
     background: url(https://framerusercontent.com/images/Cw7txRkj102SoTp368n2ufAhs.png?scale-down-to=512) no-repeat;
     background-size: cover;
+}
+
+.floating-object-lighting {
+    width: 230px;
+    height: 230px;
+    top: -110px;
+    right: 0;
+    background: url(https://framerusercontent.com/images/iVEIMoOeg0btapECZ8Lmewv6gg.png?scale-down-to=512) no-repeat;
+    background-size: cover;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+    .waitlist {
+        padding-inline: 40px;
+    }
+    .main-title {
+        width: 100%;
+        font-size: 3rem;
+    }
+    .paragraph {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .wait-list-line-right-top {
+        top: -5%;
+    }
+    .wait-list-line-right-bottom {
+        width: 1500px;
+        top: -6%;
+        right: -15%;
+    }
+    .wait-list-line-left-top {
+        left: -35%;
+    }
+    .wait-list-line-left-bottom {
+        left: -60%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .wait-list-line-right-bottom {
+        top: -15%;
+    }
+    .wait-list-line-left-top {
+        width: 1000px;
+        left: -60%;
+    }
+    .wait-list-line-left-bottom {
+        width: 1000px;
+        left: -95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .wait-list-line-right-top {
+        top: 0%;
+    }
+    .waitlist {
+        padding-inline: 25px;
+    }
+    .paragraph {
+        line-height: 25px;
+    }
+    .main-title {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    .people-who-joined-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .people-who-joined-paragraph {
+        font-size: 0.7rem;
+    }
+    .join-waitlist-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .join-waitlist-input,
+    .join-waitlist-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .waitlist {
+        padding-inline: 20px;
+        row-gap: 20px;
+    }
+    .main-title {
+        font-size: 1.6rem;
+        line-height: 38px;
+    }
+    .small-title-text {
+        font-size: 0.8rem;
+    }
+    .small-title-svg {
+        --size-svg: 14px;
+    }
+    .people-who-joined-container {
+        flex-direction: column;
+    }
+    .people-who-joined-divider {
+        display: none;
+    }
+    .wait-list-line-right-top {
+        top: 1%;
+        width: 500px;
+    }
+    .wait-list-line-right-bottom {
+        top: -17%;
+    }
 }

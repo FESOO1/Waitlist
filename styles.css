@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --f-poppins: "Poppins", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-poppins);
+}
+
+body {
+    background-color: #0d0d0d;
+}
+
+.waitlist {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+/* SMALL TITLE */
+
+.small-title {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 8px 10px;
+    border-radius: 0.8rem;
+    background: linear-gradient(45deg, transparent, rgba(66, 66, 66, 0.2));
+}
+
+.small-title-svg {
+    --size-svg: 18px;
+    color: white;
+    width: var(--size-svg);
+    height: var(--size-svg);
+}
+
+.small-title-text {
+    font-weight: 300;
+    font-stretch: semi-condensed;
+}
+
+/* MAIN TITLE AND PARAGRAPH */
+
+.main-title {
+    font-size: 3.3rem;
+    color: transparent;
+    text-align: center;
+    width: 770px;
+    font-weight: 800;
+    background: linear-gradient(30deg,white 40%, gray);
+    background-clip: text;
+    line-height: 75px;
+}
+
+.paragraph {
+    width: 770px;
+    text-align: center;
+    color: rgb(170, 170, 170);
+    font-weight: 400;
+    font-size: 1.09rem;
+    line-height: 30px;
+}
+
+/* JOIN WAITLIST CONTAINER */
+
+.join-waitlist-container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+.join-waitlist-input {
+    width: 350px;
+    height: 50px;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    background-color: rgba(255, 255, 255, 0.02);
+    padding-inline: 20px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.join-waitlist-input::placeholder {
+    font-weight: 300;
+}
+
+.join-waitlist-button {
+    height: 50px;
+    padding-inline: 15px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: rgb(22,22,22);
+    color: white;
+    font-weight: 600;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.join-waitlist-button:hover {
+    background-color: rgb(26,26,26);
+}
